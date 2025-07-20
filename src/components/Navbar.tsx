@@ -54,9 +54,23 @@ export default function Navbar() {
             <Link href="/blogs" className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-400 to-purple-600 transition-all duration-300">
               Blog
             </Link>
-            <Link href="/contact" className="bg-gradient-to-r from-blue-400 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-0.5">
-              Contact Us
-            </Link>
+            <Link 
+  href="/contact" 
+  className="group relative inline-flex items-center gap-2 text-white px-8 py-3 rounded-full font-semibold text-sm tracking-wide overflow-hidden transition-all duration-500 ease-out hover:shadow-[0_0_30px_rgba(168,132,251,0.6),0_0_60px_rgba(110,67,245,0.4),0_0_90px_rgba(139,92,246,0.2)]"
+  style={{
+    background: 'radial-gradient(ellipse at bottom, #A884FB 0%, #8b5cf6 50%, #6E43F5 100%)'
+  }}>
+        <span className="relative z-10">Contact Us</span>
+        <svg 
+          className="relative z-10 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+  </svg>
+</Link>
+            
           </div>
           
           <button 
@@ -68,7 +82,7 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        
+
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 bg-gradient-to-b from-gray-900/98 to-black/98 backdrop-blur-lg rounded-lg p-4 shadow-xl border border-gray-800/50">
             <div className="flex flex-col space-y-4">

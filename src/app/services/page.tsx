@@ -14,6 +14,7 @@ interface Service {
 	color: string;
 	imagePath: string;
 	features: string[];
+	buttonText: string;
 }
 
 // Update services data with new colors and gradients
@@ -34,6 +35,7 @@ const services: Service[] = [
 			'Brand Messaging',
 			'Brand Positioning',
 		],
+		buttonText: 'Explore Now',
 	},
 	{
 		id: 'web-design',
@@ -51,6 +53,7 @@ const services: Service[] = [
 			'Web Applications',
 			'Performance Optimization',
 		],
+		buttonText: 'Explore Now',
 	},
 	{
 		id: 'product-design',
@@ -68,6 +71,7 @@ const services: Service[] = [
 			'Usability Testing',
 			'Design Systems',
 		],
+		buttonText: 'Explore Now',
 	},
 	{
 		id: 'packaging',
@@ -85,6 +89,7 @@ const services: Service[] = [
 			'Sustainable Solutions',
 			'Packaging Production',
 		],
+		buttonText: 'Explore Now',
 	},
 	{
 		id: 'photography',
@@ -101,7 +106,9 @@ const services: Service[] = [
 			'Video Production',
 			'Motion Graphics',
 			'Content Creation',
+			
 		],
+		buttonText: 'Explore Now',
 	},
 ] as const;
 
@@ -153,14 +160,7 @@ export default function ServicesPage() {
 				{/* Hero Section */}
 				<section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
 					<div className="absolute inset-0 bg-gradient-to-b from-black/70 to-transparent z-10"></div>
-					{heroVisible && (
-						<motion.div
-							initial={{ scale: 1.1 }}
-							animate={{ scale: 1 }}
-							transition={{ duration: 1.5 }}
-							className="absolute inset-0 bg-[url('/images/services/hero-bg.jpg')] bg-cover bg-center"
-						/>
-					)}
+					
 					<div className="relative z-20 text-center px-6">
 						<motion.h1
 							initial={{ y: 20, opacity: 0 }}

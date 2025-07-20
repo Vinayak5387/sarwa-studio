@@ -182,7 +182,7 @@ export default function ServicesSection() {
                     ))}
                   </ul>
                   <Link 
-                    href={`/services/${service.id}`}
+                    href={`/services/`}
                     className="group inline-flex items-center text-white px-6 py-3 rounded-full transition-all duration-300 hover:translate-y-[-3px] hover:shadow-md overflow-hidden relative"
                     style={{ 
                       backgroundColor: service.color,

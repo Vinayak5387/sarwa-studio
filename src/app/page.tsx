@@ -54,7 +54,7 @@ export default function Home() {
       {/* Brands Section */}
       <div className="py-12 px-6 md:px-12 lg:px-24 bg-gray-900/50 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-center text-xl text-gray-400 mb-10">Trusted by innovative brands</h3>
+          <h3 className="text-center text-xl text-gray-400 mb-10">  </h3>
           {/* ...existing brands code... */}
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function Home() {
             <div className="group">
               <div className="aspect-square bg-gray-800/50 backdrop-blur-sm relative overflow-hidden rounded-lg">
                 <Image 
-                  src="/images/SELECTED-WORK/brand-identity.jpg"
+                  src="/images/SELECTED-WORK/brand-identity.png"
                   alt="Brand Identity Project"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -82,8 +82,70 @@ export default function Home() {
                 <p className="text-gray-400 mb-4">Complete visual identity for a modern lifestyle brand.</p>
               </div>
             </div>
-            {/* ...Repeat for other project cards... */}
+            {/* Project¬ 2 */}
+            <div className="stack-carddd card hover-lift">
+              <div className="stack-card-internal aspect-square bg-[#1f1f1f] relative overflow-hidden">
+                <Image 
+                  src="/images/SELECTED-WORK/Video Campaign.jpg"
+                  alt="Video Campaign Project"
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-0"></div>
+                <div className="absolute bottom-4 right-4 text-4xl font-bold text-white opacity-80">02</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">Video Campaign</h3>
+                <p className="text-gray-400 mb-4">
+                  Series of promotional videos with custom motion graphics.
+                </p>
+              </div>
+            </div>
+            
+            {/* Project 3 */}
+            <div className="stack-carddd card hover-lift">
+              <div className="stack-card-internal aspect-square bg-[#1f1f1f] relative overflow-hidden">
+                <Image 
+                  src="/images/SELECTED-WORK/social media.png"
+                  alt="Social Media Project"
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-0"></div>
+                <div className="absolute bottom-4 right-4 text-4xl font-bold text-white opacity-80">03</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">Social Media</h3>
+                <p className="text-gray-400 mb-4">
+                  Creating and scheduling content to grow and engage on social platforms.
+                </p>
+              </div>
+            </div>
+            
+            {/* Project 4 */}
+            <div className="stack-carddd card hover-lift">
+              <div className="stack-card-internal aspect-square bg-[#1f1f1f] relative overflow-hidden">
+                <Image 
+                  src="/images/SELECTED-WORK/uui-ux.png"
+                  alt="UI/UX Design Project"
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-0"></div>
+                <div className="absolute bottom-4 right-4 text-4xl font-bold text-white opacity-80">04</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">UI/UX Design</h3>
+                <p className="text-gray-400 mb-4">
+                  User interface design for web and mobile applications.
+                </p>
+              </div>
+            </div>
           </div>
+
         </div>
       </section>
 
@@ -91,24 +153,10 @@ export default function Home() {
       <ServicesSection />
 
       {/* Testimonials Section */}
-      <section className="py-20 px-6 md:px-12 lg:px-24 bg-gray-800/50 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-100">What Our Clients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* ...existing testimonials code with updated colors... */}
-          </div>
-        </div>
-      </section>
+    
 
       {/* Stats Section */}
-      <section className="py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-blue-900/50 to-purple-900/50 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {/* ...existing stats code... */}
-          </div>
-        </div>
-      </section>
-
+      
       {/* Blog Posts Section */}
       <section className="py-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
