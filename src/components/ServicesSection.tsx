@@ -56,6 +56,19 @@ const services = [
     ],
     color: '#f59e0b',
     image: '/images/services/package.jpg'
+  },
+  {
+    id: 'webdev',
+    title: 'Web Development',
+    description: 'Build fast, modern, and scalable websites for your business.',
+    bulletPoints: [
+      'Responsive Web Design',
+      'SEO Optimization',
+      'E-commerce Solutions',
+      'Performance & Security'
+    ],
+    color: '#2563eb',
+    image: '/images/services/pack.png'
   }
 ];
 
